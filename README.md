@@ -1,6 +1,6 @@
-# @logged.lol media
+# loggedlol media
 
-Public preview-media mirror for @logged.lol. Application source and prompt text stay in the separate private application repository.
+Public preview-media mirror for loggedlol. Application source and prompt text stay in the separate private application repository.
 
 The manifest records original source URLs, owning prompt IDs, MIME types, byte sizes, and SHA-256 digests. Asset filenames derive from the original URL. Original media attribution remains with MotionSites and the respective creators; no new license to the underlying media is granted by this mirror.
 
@@ -12,12 +12,12 @@ Two HLS previews were remuxed into standalone MP4s using the first/default video
 
 Use commit-pinned raw URLs for application playback:
 
-`https://raw.githubusercontent.com/NoseyGames/motion-library-media/<commit>/assets/<filename>`
+`https://raw.githubusercontent.com/NoseyGames/loggedlol-media/<commit>/assets/<filename>`
 
 This is a snapshot, not an automatic recurring scrape. Source changes fail checksum validation instead of silently replacing media. Missing original images remain unavailable.
 
 ## Image CDN
 
-Fetch the public image catalog at https://cdn.jsdelivr.net/gh/NoseyGames/motion-library-media@main/images.json. Its 246 image records contain immutable commit-pinned CDN URLs, prompt names, sizes, MIME types, SHA-256 hashes and original source URLs. Use the `url` field directly with `fetch()` or an `<img>` element. Videos stay on raw GitHub URLs. The correct CDN hostname is `cdn.jsdelivr.net`, not `cdn.jsdelivr.com`.
+Fetch the public image catalog at https://cdn.jsdelivr.net/gh/NoseyGames/loggedlol-media@main/images.json. Its 246 image records contain immutable commit-pinned CDN URLs, prompt names, sizes, MIME types, SHA-256 hashes and original source URLs. Use the `url` field directly with `fetch()` or an `<img>` element. Videos stay on raw GitHub URLs. The correct CDN hostname is `cdn.jsdelivr.net`, not `cdn.jsdelivr.com`.
 
-Example image: https://cdn.jsdelivr.net/gh/NoseyGames/motion-library-media@bc58dfeff931cf6c7a94323d39c2475d4eabb323/assets/11637b85bdf4e0fa526612563a15f7bdf1d70075f824a8cffbd720b5ceffeb83.webp
+Example image: https://cdn.jsdelivr.net/gh/NoseyGames/loggedlol-media@bc58dfeff931cf6c7a94323d39c2475d4eabb323/assets/11637b85bdf4e0fa526612563a15f7bdf1d70075f824a8cffbd720b5ceffeb83.webp
